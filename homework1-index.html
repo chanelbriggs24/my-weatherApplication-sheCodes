@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather Application</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="searchBar" id="search-form">
+        <input
+          type="text"
+          class="city-search"
+          id="city"
+          placeholder="Enter a city..."
+          required
+        />
+        <input
+          type="submit"
+          class="city-submit"
+          id="submit-form"
+          value="Search"
+        />
+      </form>
+
+      <header class="city-name">
+        <h1 id="city-title">Pittsburgh</h1>
+      </header>
+
+      <div class="weather">
+        <span class="weather-description">
+          <span id="time">Friday 18:21,</span> few clouds <br />
+          Humidity: <strong>71%</strong>, Wind: <strong>8.75km/h</strong>
+        </span>
+
+        <div class="current-temp">
+          <span class="temp-icon">☀️</span>
+          <span class="temp-value" id="tempVal">71</span>
+          <span class="temp-degrees">&deg;F</span>
+        </div>
+      </div>
+      <div class="grid">
+        <ul>
+          <li class="day-of-the-week">
+            Sun <br />
+            ⛅
+            <div><strong>87&deg; F </strong>- 72&deg; F</div>
+          </li>
+          <li class="day-of-the-week">
+            Mon <br />⛅
+            <div><strong>82&deg; F </strong>- 65&deg; F</div>
+          </li>
+          <li class="day-of-the-week">
+            Tue <br />⛅
+            <div><strong>88&deg; F </strong>- 62&deg; F</div>
+          </li>
+          <li class="day-of-the-week">
+            Wed <br />⛅
+            <div><strong>89&deg; F </strong>- 70&deg; F</div>
+          </li>
+          <li class="day-of-the-week">
+            Thur <br />⛅
+            <div><strong>81&deg; F </strong>- 64&deg; F</div>
+          </li>
+          <li class="day-of-the-week">
+            Sat <br />⛅
+            <div><strong>89&deg; F </strong>- 63&deg; F</div>
+          </li>
+        </ul>
+      </div>
+      <footer>
+        This project was coded by <a href="shecodes.io">SheCodes</a> and is
+        <a href="https://github.com/shecodesio/weather"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://shecodes-weather.netlify.app/">hosted on Netlify</a>
+      </footer>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>
